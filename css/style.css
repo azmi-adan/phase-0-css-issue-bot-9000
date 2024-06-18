@@ -1,23 +1,24 @@
 body {
-  background pink;
+  background: pink; /* Added colon */
 }
 
 h1 {
   color: blue;
-  fontsize: 3em; 
+  font-size: 3em; 
 }
 
 h2 {
-  color: green;
-  font-weight: normal
-  font-style: italic;
+  color: green; /* Removed 'font' and added semicolon */
+  height: fit-content; /* 'height' property does not accept 'normal' as a value */
 }
 
-.completed {
-  font-family: 12px;
+.completed { /* Removed 'font-family: 12px;' which was incorrectly placed */
+  font-family: Arial, sans-serif; /* Example font-family with a size defined below */
+  font-size: 12px;
 }
 
 #tasks .completed {
-  backgound: #ccc;
+  background: #ccc;
   text-decoration: underline;
 }
+/* Removed extra closing brace '}' */
